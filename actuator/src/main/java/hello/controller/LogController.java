@@ -17,4 +17,9 @@ public class LogController {
         log.error("trace error");
         return "ok";
     }
+    //logger level change : POST /actuator/loggers/hello.controller {"configuredLevel" : "TRACE"}
+
+    //detail metrics search
+    //http://localhost:8080/actuator/metrics/jvm.memory.used?tag=area:heap
+    //http://localhost:8080/actuator/metrics/http.server.requests?tag=uri:/log
 }

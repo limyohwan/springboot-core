@@ -16,4 +16,5 @@ public class ActuatorApplication {
     public InMemoryHttpExchangeRepository httpExchangeRepository(){
         return new InMemoryHttpExchangeRepository();
     }
+    // endpoint /actuator/httpexchanges
 }
